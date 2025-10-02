@@ -59,19 +59,7 @@ function loadForms() {
     
     formsContainer.innerHTML = '';
 
-    if (forms.length === 0) {
-        formsContainer.innerHTML = `
-            <div class="no-forms">
-                <i class="fas fa-inbox"></i>
-                <h3>Henüz form bulunmuyor</h3>
-                <p>Yönetici panelinden yeni form oluşturabilirsiniz</p>
-                <button onclick="goToAdmin()" style="margin-top: 15px; padding: 10px 20px; background: #667eea; color: white; border: none; border-radius: 8px; cursor: pointer;">
-                    <i class="fas fa-cog"></i> Yönetici Paneline Git
-                </button>
-            </div>
-        `;
-        return;
-    }
+    
 
     // Açık formları önce göster, kapalıları sonra
     const openForms = forms.filter(form => form.status === 'open');
