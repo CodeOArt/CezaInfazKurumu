@@ -38,7 +38,6 @@ function showDebugInfo() {
         <div>Açık Form: ${forms.filter(f => f.status === 'open').length}</div>
         <div>Duraklatılmış: ${forms.filter(f => f.status === 'paused').length}</div>
         <div>Kapalı Form: ${forms.filter(f => f.status === 'closed').length}</div>
-        <div>Forms Container: ${document.getElementById('formsContainer') ? 'Var' : 'Yok'}</div>
     `;
     debugDiv.style.display = 'block';
 }
@@ -59,7 +58,6 @@ function loadForms() {
     
     formsContainer.innerHTML = '';
 
-    
 
     // Açık formları önce göster, kapalıları sonra
     const openForms = forms.filter(form => form.status === 'open');
