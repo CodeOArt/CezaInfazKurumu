@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birim Alım Formları</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-users"></i> Birim Alım Formları</h1>
+            <p>Ceza İnfaz Kurumu | CTE</p>
+        </div>
+
+        <!-- DEBUG: Container kontrolü -->
+        <div id="debugInfo" style="background: #f8f9fa; padding: 15px; border-radius: 10px; margin-bottom: 20px; display: none;">
+            <strong>AKTİF ALIMLAR:</strong>
+            <div id="debugContent"></div>
+        </div>
+
+        <div class="forms-container" id="formsContainer">
+            <!-- Formlar buraya gelecek -->
+            <div class="loading">Formlar yükleniyor...</div>
+        </div>
+    </div>
+
+    <!-- Admin Link -->
+    <a href="admin.html" class="admin-link">
+        <i class="fas fa-cog"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
