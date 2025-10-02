@@ -96,9 +96,6 @@ function showAlreadySubmittedWarning() {
                 <a href="index.html" class="back-btn">
                     <i class="fas fa-arrow-left"></i> Form Listesine Dön
                 </a>
-                <button onclick="resetUserSubmission()" class="reset-btn">
-                    <i class="fas fa-redo"></i> Farklı Bir İsimle Başvur
-                </button>
             </div>
         </div>
     `;
