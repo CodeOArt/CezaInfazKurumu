@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personel Giriş - Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <i class="fas fa-shield-alt"></i>
+                <h1>Personel Giriş</h1>
+                <p>Admin paneline erişmek için giriş yapın</p>
+            </div>
+            
+            <form id="loginForm" class="login-form">
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Şifre" required>
+                </div>
+                
+                <button type="submit" class="login-btn">
+                    <span class="btn-text">Devam Et</span>
+                    <div class="btn-loader"></div>
+                </button>
+            </form>
+            
+            <div class="login-footer">
+                <a href="index.html" class="back-to-home">
+                    <i class="fas fa-arrow-left"></i> Ana Sayfaya Dön
+                </a>
+            </div>
+        </div>
+        
+        <!-- Error Notification -->
+        <div id="errorNotification" class="notification error">
+            <i class="fas fa-exclamation-circle"></i>
+            <span>Personel kaydı bulunamadı!</span>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
